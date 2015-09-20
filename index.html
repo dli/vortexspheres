@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Vortex Spheres</title>
+        
+        <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+        <link href="vortexspheres.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <div id="error"></div>
+        <div id="video">
+            You can still view a video: <br/>
+            <iframe width="854" height="480" style="margin-top: 7px;" src="https://www.youtube.com/embed/CmnbvHwd3jc" frameborder="0" allowfullscreen></iframe> 
+        </div>
+
+        <div id="qualities"><span id="quality-label">Quality:</span><span class="quality" id="low-quality">Low</span><span class="quality" id="medium-quality">Medium</span><span class="quality" id="high-quality">High</span></div>
+
+        <canvas width="1920" height="1080"></canvas>
+
+        <div id="ui">
+            <div class="slider-label">Variation</div>
+        	<div id="variation-slider" class="slider"></div>
+            <div class="slider-label">Radius</div>
+        	<div id="smoothing-radius-slider" class="slider"></div>
+        	<div id="drop-button">Drop</div>
+        </div>
+
+        <div id="footer"><a href="http://david.li">David.Li</a> | <a href="https://youtu.be/CmnbvHwd3jc">Video</a></div>
+
+        <script src="sharedvortexfilamentsconstants.js"></script>
+        <script src="shaders.js"></script>
+        <script src="mathutilities.js"></script>
+        <script src="webglutilities.js"></script>
+        <script src="spheregeometry.js"></script>
+        <script src="utilities.js"></script>
+        <script src="camera.js"></script>
+        <script src="buttons.js"></script>
+        <script src="slider.js"></script>
+        <script src="vortexfilaments.js"></script>
+        <script src="filamentsgeometry.js"></script>
+        <script src="vortexspheres.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
